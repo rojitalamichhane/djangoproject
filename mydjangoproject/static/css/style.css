@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&family=Splash&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.text{
+    max-width: 100%;
+    background-size: cover;
+    background-color: #eff4fd;
+}
+
+.logo{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    margin-left: -25px
+
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:5px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+.details{
+    margin-left: 5%;
+    margin-top: 13%;
+}
+
+.details h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 15px;
+}
+
+span{
+    color: #FECE36;
+}
+
+.details p{
+    color:#555;
+    line-height: 22px;
+}
+
+.details a{
+    background: #212121;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color:#fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 30px 0;
+   
+}
+
+.images{
+    height: 80%;
+    bottom: 0;
+    position: relative;
+    /* margin-right: 10%; */
+}
+
+.images img:nth-child(2){
+    top: 5%;
+    position: absolute;
+    left: -7%;
+    /* transform: translateX(-50%); */
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 51px;
+
+}
+
+
+/* About me page starts */
+
+.About{
+    background-color: #eff4fd;
+    /* position: absolute; */
+    padding: 100px 0;
+}
+
+.About .title{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+.About .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.About .title::after{
+    content: "WHO I AM";
+    position: absolute;
+    background: #eff4fd;
+    bottom: -15px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: orange;
+}
+
+.col-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.About .container1{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.Services .container3, .skills .skill-content,
+.contact .contact-content{
+    display:flex;
+    justify-content: space-evenly;
+    padding:0 15px;
+}
+
+
+.About .container1 .col-right{
+    width: 55%;
+
+}
+
+.About .container1 .col-right .content{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.About .container1 .col-left span{
+    color: orange;
+}
+
+.About .container1 .col-right p{
+    text-align: justify;
+    
+}
+
+
+/* Services part starts*/
+
+.Services, .skills, .contact{
+    background-color: #eff4fd;
+    /* position: absolute; */
+    
+    font-family: 'Ubuntu',sans-serif;
+
+}
+.Services .title{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+.Services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.Services .title::after{
+    content: "WHAT I PROVIDE";
+    position: absolute;
+    background: #eff4fd;
+    bottom: -15px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: orange;
+}
+
+.Services .container3 .card{
+    width: calc(33% - 20px);
+    text-align: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.Services .container3 .card i{
+    font-size: 50px;
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+.Services .container3 .card .text3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.Services .container3 .card .box{
+    transition: all 0.3s ease;
+}
+
+.Services .container3 .card:hover .box{
+    transform: scale(1.05);
+}
+
+.Services .container3 .card:hover{
+    background: lightgrey;
+}
+
+.Services .container3 .card:hover i{
+    color: orange;
+}
+
+
+
+/*skill part starts*/
+.skills .contact{
+    background-color: #eff4fd;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.skill-content, .contact{
+font-family: 'Ubuntu',sans-serif;
+}
+
+
+.skills .title{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "WHAT I KNOW";
+    position: absolute;
+    background: #eff4fd;
+    bottom: -15px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: orange;
+}
+
+.skills .skill-container .skill-content .column-left{
+    width: 50%;
+}
+
+.skills .skill-container .skill-content .column-right{
+    width: 43%;
+}
+
+.skills .skill-container .skill-content .column-left .text4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.skills .skill-container .skill-content .column-left p{
+    text-align: justify;
+}
+
+.skills .skill-container .skill-content .column-left a{
+    display: inline-block;
+    background: orange;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid orange;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.skills .skill-container .skill-content .column-left a:hover{
+    color:#212121;
+    background: none;
+}
+
+.skills .skill-container .skill-content .column-right .bars{
+    margin-bottom: 15px;
+    
+}
+
+.skills .skill-container .skill-content .column-right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.skills .skill-container .skill-content .column-right span{
+    color: #111;
+    font-size:18px;
+    font-weight: 500px;
+}
+
+.skills .skill-container .skill-content .column-right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skill-container .skill-content .column-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: orange;
+}
+
+.skills .skill-container .skill-content .column-right .html::before{
+    width: 90%;
+}
+
+.skills .skill-container .skill-content .column-right .css::before{
+    width: 60%;
+}
+
+.skills .skill-container .skill-content .column-right .js::before{
+    width: 40%;
+}
+
+.skills .skill-container .skill-content .column-right .python::before{
+    width: 60%;
+}
+
+.skills .skill-container .skill-content .column-right .mysql::before{
+    width: 50%;
+}
+
+
+/*contact section starts*/
+
+
+
+.contact .title{
+    position: relative;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    background: #eff4fd;
+    bottom: -15px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: orange;
+}
+
+.contact .contact-content{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.contact .contact-parent{
+    display: flex;
+    
+}
+
+form{
+    padding: 0 10px;
+}
+
+input{
+    border: none;
+    padding: 6px 12px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.form-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.name{
+    width:50%;
+    margin-right: 20px;
+}
+
+button{
+    display: inline-block;
+    background: orange;
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid orange;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover{
+    color:#212121;
+    background: none;
+}
+
+.contact .contact-parent .contact-content p{
+    text-align: justify;
+}
+
+.contact .contact-parent .contact-content .text5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.contact .contact-parent .contact-content .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-parent .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-parent .contact-content .row .info{
+    margin-left: 30px;
+}
+
+
+/*media query starts*/
+@media (max-width: 930px) { 
+    .container{
+       flex-direction: column;
+       align-items: center;
+    }
+    }
+
+@media (max-width: 714px){
+        nav{
+            flex-direction: column;
+        }
+    }
+
+@media (max-width: 533px){
+        nav ul{
+            display: flex;
+            flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .container{
+        padding:0px;
+    }
+
+
+    .details{
+    margin-top: 5%;
+   }
+}
+
+@media (max-width: 417px){
+    .images{
+        display:none;
+    }
+    .col-left img{
+        display: none;
+    }
+}
+
+@media (max-width:1060px) {
+    .container1{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .col-left img{
+        width: 50% !important;
+        margin-left: 0%;
+        flex-shrink: 0;
+    }
+
+    .About .container1 .col-left{
+        width: 90% !important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .About .container1 .col-right{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .contact .contact-parent{
+        display:flex;
+        flex-direction: column;
+    }
+    .skills .skill-container .skill-content{
+        flex-direction: column;
+    }
+    button{
+        display: flex;
+    }
+ 
+    
+}
+
+@media (max-width: 501px){
+    .Services .service-container .container3{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+  
+}
+
+@media (max-width: 533px){
+    .images img:nth-child(2) {
+        top: -6%;
+    
+}
+
+
+@media (max-width: 320px){
+    /* .Services .service-container .container3 .card{
+        width: 100%;
+    } */
+    .container3, .skill-content, .contact-parent{
+        display:flex;
+        flex-direction: column;
+    }
+    .container1{
+        width: 100%;
+    }
+    /* .contact .contact-content, .skills .skill-container .skill-content .column-left, .skills .skill-container .skill-content .column-right{
+       width:100%;
+    } */
+    .Services .title {
+        padding-bottom: 44px;
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
