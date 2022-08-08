@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,11 +8,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <title>My Portfolio</title>
-    
-    <link rel="stylesheet" href="{ % static 'css/style.css' % }">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
-    {% load static %}
     <section class="text">
       <nav>
         <div class="logo">My Portfolio</div>
@@ -34,14 +33,14 @@
         </div>
         <div class="images">
           <img
-            src="./images/shape.png"
+            src="{% static 'images/shape.png' %}"
             width="400px"
             height="450px"
             alt="shape"
             class="shape"
           />
           <img
-            src="./images/mynewpicture.png"
+            src="{% static 'images/mynewpicture.png' %}"
             alt="myprofilepic"
             class="profilepic"
           />
@@ -54,7 +53,7 @@
         <h2 class="title">About Me</h2>
         <div class="container1">
           <div class="col-left">
-            <img src="./images/girl.jpg" alt="girl" />
+            <img src="{% static 'images/girl.jpg' %}" alt="girl" />
           </div>
           <div class="col-right">
             <div class="content">
